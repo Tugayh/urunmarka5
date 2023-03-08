@@ -19,5 +19,5 @@ class ProductTemplate(models.Model):
     _inherit = "product.template"
 
     product_brand_id = fields.Many2one(
-        "product.brand", string="Marka", help="Marka on sec"
+        "product.brand", string="Marka", help="Marka ondan sec"
     )
