@@ -18,6 +18,6 @@ class ProductTemplate(models.Model):
 class SaleOrder(models.Model):
     _inherit = "sale.order"
 
-    payment_term_id = fields.Many2one(
-        "sale.order", string="Marka", help="Marka kosul sec"
+    payment_test_id = fields.Many2one(
+        "sale.order", string="Test Alan", help="Test alan sec"
     )
