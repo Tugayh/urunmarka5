@@ -15,9 +15,9 @@ class ProductTemplate(models.Model):
     product_brand_id = fields.Many2one(
         "product.brand", string="Brand", help="Select a brand for this product abcn"
     )
-class ProductTemplate(models.Model):
-    _inherit = "product.template"
+class SaleOrder(models.Model):
+    _inherit = "sale.order"
 
-    product_brand_id = fields.Many2one(
-        "product.brand", string="Marka", help="Marka ondans sec"
+    payment_term_id = fields.Many2one(
+        "sale.order", string="Marka", help="Marka kosul sec"
     )
